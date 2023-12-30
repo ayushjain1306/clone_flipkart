@@ -6,12 +6,12 @@ const connection = async ()=>{
     const URL = "mongodb+srv://ayushjain:a9518217103@products.iokj8ph.mongodb.net/?retryWrites=true&w=majority";
 
     try {
-        // await mongoose.connect(URL, {
-        //     useUnifiedTopology: "true",
-        //     useNewUrlParser: "true"
-        // });
+        await mongoose.connect(URL, {
+            useUnifiedTopology: "true",
+            useNewUrlParser: "true"
+        });
 
-        // DefaultData();
+        DefaultData();
 
         console.log("Database connected successfully.");
     } 
