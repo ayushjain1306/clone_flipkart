@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(cors({
-    origin: ["https://clone-flipkart-mern-stack.vercel.app"],
+    origin: ["https://clone-flipkart-mern-stack.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
 }));
