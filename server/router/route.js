@@ -7,7 +7,7 @@ const {addPaymentGateway, paymentVerification} = require("../controller/paymentC
 const router = express.Router();
 
 router.get('/', (request, response) => {
-    res.json("Hello");
+    response.json("Hello");
 });
 
 router.post('/signup', userSignup);
