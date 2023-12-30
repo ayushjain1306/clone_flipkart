@@ -1,0 +1,17 @@
+.heading, .heading1, p {
+    background-color: whitesmoke;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    font-size: 15px;
+}
+
+.heading1 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 13px;
+}

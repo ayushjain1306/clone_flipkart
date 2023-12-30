@@ -1,0 +1,24 @@
+.upper2, .first{
+    background-color: rgb(34, 32, 32);
+}
+
+.upper2 {
+    color: grey;
+    width: 50%;
+}
+
+.first {
+    color: white
+}
+
+.upper2 div{
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.upper2 ul{
+    font-size: 13px;
+    /* font-weight: bold; */
+    
+}
