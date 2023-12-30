@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors({
     origin: "https://clone-flipkart-mern-stack.vercel.app",
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }));
 
