@@ -2,11 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "server/*",
+            "src": "*.js",
             "use": "@vercel/node"
         }
     ],
-    "env": {
-        "MONGODB_URI": "mongodb+srv://ayushjain:a9518217103@products.iokj8ph.mongodb.net/?retryWrites=true&w=majority"
-    }
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
 }
