@@ -3,7 +3,7 @@ const DefaultData = require('./defaultData.js')
 require('dotenv').config();
 
 const connection = async ()=>{
-    const URL = process.env.URL;
+    const URL = "mongodb+srv://ayushjain:a9518217103@products.iokj8ph.mongodb.net/?retryWrites=true&w=majority";
 
     try {
         await mongoose.connect(URL, {
