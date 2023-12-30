@@ -7,7 +7,11 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: ["https://clone-flipkart-mern-stack.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
 
 app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
