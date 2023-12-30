@@ -1,7 +1,7 @@
 import axios from "axios";
 import logo from "../Components/details/images/logo.png";
 
-const URL = "http://clone-flipkart-mern.vercel.app";
+const URL = "https://clone-flipkart-mern.vercel.app";
 
 async function payUsingRazorpay(price) {
     try{
