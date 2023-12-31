@@ -8,7 +8,7 @@ const NewDialog = styled(Dialog)`
     margin: auto;
 
     @media screen and (max-width: 1100px){
-        width: 85%;
+        width: 90%;
     }
 `
 
