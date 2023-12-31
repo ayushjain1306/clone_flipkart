@@ -9,8 +9,9 @@ const NewBox = styled(Box)`
     margin-left: 60px;
 
     @media screen and (max-width: 1100px){
-        width: 100vw;
-        margin-left: 0px;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 `
 
