@@ -23,10 +23,9 @@ function App() {
     <DataProvider>
       <BrowserRouter>
         <Routes>
-          <Route path = "/" element = {<Home products = {products} />} />
+          <Route path = "*" element = {<Home products = {products} />} />
           <Route path = "/products/:id" element = {<Details />} />
           <Route path = "/cart" element = {<Cart />} />
-          <Route element = {<Home products = {products} />}>
         </Routes>
         <Footer />
       </BrowserRouter>
