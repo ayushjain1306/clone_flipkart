@@ -37,6 +37,18 @@ const NewButton = styled.button `
 
     @media screen and (max-width: 1100px){
         margin-left: 0px;
+        margin-right: 5%;
+    }
+`
+
+const SellerDiv = styled.div `
+    background-color: white;
+    margin: 0px 0px 5% 0px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1100px){
+        margin-left: 0px;
     }
 `
 
@@ -59,7 +71,7 @@ function ThirdSection(){
 
     return (
         <NewDiv>
-            <div className = "seller" style = {{
+            <SellerDiv className = "seller" style = {{
                 backgroundColor: "white",
                 marginTop: "0px",
                 marginLeft: "5%",
@@ -82,7 +94,7 @@ function ThirdSection(){
                     fontFamily: "Arial",
                     marginTop: "3px"
                 }}>Become a Seller</h3>
-            </div>
+            </SellerDiv>
 
             {
                 account ?
