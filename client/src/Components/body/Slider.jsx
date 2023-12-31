@@ -54,6 +54,7 @@ function Slider({products, title}) {
             <Carousel 
                 responsive={responsive}
                 swipeable={true}
+                infinite={true}
                 itemClass="carousel-item-padding-40-px"
 
                 style ={{
