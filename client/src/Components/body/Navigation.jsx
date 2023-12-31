@@ -20,9 +20,9 @@ const NewBox = styled(Box)`
     @media screen and (max-width : 700px){
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        width: 100vw;
-        margin: 0px;
-        padding: 0px;
+        width: 100%;
+        margin: 0px 0px;
+        padding: 0px 0px 2% 2%;
     }
 `
 
