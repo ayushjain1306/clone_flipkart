@@ -38,6 +38,7 @@ const Typo = styled(Box) `
 
     @media screen and (max-width: 700px){
         font-size: 18px;
+        padding: 0px;
     }
 `
 
