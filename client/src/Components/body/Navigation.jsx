@@ -21,8 +21,19 @@ const NewBox = styled(Box)`
         display: grid;
         grid-template-columns: 24% 24% 24% 24%;
         width: 100%;
-        margin: 0px 0px;
-        padding: 0px 0px 2% 2%;
+        margin: 0px;
+        padding: 0px;
+    }
+`
+
+const AnotherBox = styled(Box)`
+    background-color: white;
+    width: 10%;
+    text-align: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: 1100px){
+        width: 100%;
     }
 `
 
@@ -45,12 +56,7 @@ function Navigation() {
             {
                 navData.map(data =>{
                     return (
-                        <div key={data.text} style ={{
-                            backgroundColor: "white",
-                            width: "10%",
-                            textAlign: "center",
-                            marginTop: "20px"
-                        }}>
+                        <AnotherBox key={data.text}>
                             <img src={data.url} alt="image" />
                             <Typography style ={{
                                 backgroundColor: "white",
@@ -59,7 +65,7 @@ function Navigation() {
                                 marginTop: "4px",
                                 color: "black"
                             }}>{data.text}</Typography>
-                        </div>
+                        </AnotherBox>
                     );
                 })
             }
