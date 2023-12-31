@@ -71,15 +71,7 @@ function ThirdSection(){
 
     return (
         <NewDiv>
-            <SellerDiv className = "seller" style = {{
-                backgroundColor: "white",
-                marginTop: "0px",
-                marginLeft: "5%",
-                marginRight: "0px",
-                marginBottom: "0px",
-                display: "flex",
-                alignItems: "center"
-            }}>
+            <SellerDiv className = "seller">
                 <img src={seller} alt="" style ={{
                     height: "20px",
                     width: "20px",
