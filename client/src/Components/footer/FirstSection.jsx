@@ -8,7 +8,7 @@ const NewBox = styled(Box)`
     width: 51%;
     margin-left: 60px;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 1100px){
         width: 100vw;
         margin-left: 20px;
     }
