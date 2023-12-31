@@ -22,6 +22,7 @@ const NewBox = styled(Box)`
         grid-template-columns: 25% 25% 25% 25%;
         width: 100vw;
         margin: 0px;
+        padding: 0px;
     }
 `
 
