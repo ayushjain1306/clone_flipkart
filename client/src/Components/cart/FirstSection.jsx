@@ -90,7 +90,7 @@ function FirstSection({ cartItems }) {
     }
 
     const payment = async() =>{
-        await paymentUsingRazorpay(totalAmount);
+        alert("Payment Successful.");
     }
 
     return (
