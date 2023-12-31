@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { Routes, Route, BrowserRouter, Redirect } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import './App.css';
 import Home from "./Home.jsx";
@@ -26,7 +26,7 @@ function App() {
           <Route path = "/" element = {<Home products = {products} />} />
           <Route path = "/products/:id" element = {<Details />} />
           <Route path = "/cart" element = {<Cart />} />
-          <Redirect to = "/">
+          <Route element = {<Home products = {products} />}>
         </Routes>
         <Footer />
       </BrowserRouter>
