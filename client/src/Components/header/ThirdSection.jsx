@@ -25,6 +25,21 @@ const NewDiv = styled.div `
     }
 `
 
+const NewButton = styled.button `
+    border: 0px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 25%;
+
+    @media screen and (max-width: 1100px){
+        margin-left: 0px;
+    }
+`
+
 function ThirdSection(){
     const [open, setOpen] = useState(false);
     const [logOpen, setLogOpen] = useState(false);
@@ -113,16 +128,7 @@ function ThirdSection(){
                 
                 
                 :
-                <button style={{
-                    border: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    backgroundColor: "white",
-                    marginLeft: "5%",
-                    borderRadius: "10px",
-                    cursor: "pointer",
-                    width: "25%"
-                }} onClick = {()=>handleOpen()}>
+                <NewButton onClick = {()=>handleOpen()}>
                     <img src={login} alt="Sign In" style={{
                         height: "22px",
                         width: "22px",
@@ -139,7 +145,7 @@ function ThirdSection(){
                         width: "10px",
                         marginLeft: "3%"
                     }} />
-                </button>
+                </NewButton>
             }
 
 
