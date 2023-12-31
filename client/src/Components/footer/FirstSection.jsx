@@ -10,7 +10,6 @@ const NewBox = styled(Box)`
 
     @media screen and (max-width: 1100px){
         width: 100vw;
-        padding-left: 20px;
     }
 `
 
