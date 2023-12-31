@@ -27,6 +27,7 @@ const NewBox = styled(Box)`
     @media screen and (max-width: 700px){
         margin: 0px 15px 0px 0px;
         width: 100vw;
+        padding: 0px;
     }
 `
 
@@ -38,7 +39,6 @@ const Typo = styled(Box) `
 
     @media screen and (max-width: 700px){
         font-size: 18px;
-        padding: 0px;
     }
 `
 
