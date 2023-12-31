@@ -43,7 +43,7 @@ const NewButton = styled.button `
 
 const SellerDiv = styled.div `
     background-color: white;
-    margin: 0px 0px 5% 0px;
+    margin-left: 5%;
     display: flex;
     align-items: center;
 
