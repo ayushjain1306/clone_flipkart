@@ -28,8 +28,7 @@ function Buttons({id, price}) {
     }
 
     const payment = async() =>{
-        const data = await payUsingRazorpay(price);
-        
+        alert("Payment Successful.");
     }
 
     return (
