@@ -43,12 +43,12 @@ function Cart() {
 
             <NewBox>
                 {
-                    cartItems ? &&
+                    cartItems.length > 0 ?
                         <Grid container style = {{
                             marginBottom: "15px"
                         }}>
                             <NewGrid1 item lg={8} md = {8} sm = {12} xs = {12}>
-{/*                                 <FirstSection cartItems = {cartItems} /> */}
+                                <FirstSection cartItems = {cartItems} />
                             </NewGrid1>
                             <NewGrid2 item lg={3} md = {3} sm = {12} xs = {12}>
                                 <SecondSection cartItems = {cartItems} />
