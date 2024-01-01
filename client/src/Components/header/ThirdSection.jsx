@@ -14,6 +14,7 @@ import LogOutBox from "./LogOutBox.jsx"
 const NewDiv = styled.div `
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     width: 40.5%;
 
