@@ -35,9 +35,14 @@ const NewButton = styled.button `
     cursor: pointer;
     width: 25%;
 
-    @media screen and (max-width: 1100px){
+    @media screen and (max-width: 500px){
         margin-left: 0px;
         margin-right: 5%;
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 1100px){
+       margin-left: 3%;
+       margin-right: 3%;
     }
 `
 
