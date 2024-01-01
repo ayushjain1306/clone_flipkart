@@ -29,6 +29,7 @@ const NewButton = styled.button `
     border: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     margin-left: 5%;
     border-radius: 10px;
