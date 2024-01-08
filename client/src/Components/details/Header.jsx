@@ -86,8 +86,8 @@ const AnotherLink = styled(Link)`
     text-decoration: none;
 
     @media screen and (max-width: 1100px){
-        display: inline;
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
     }
 `
 
