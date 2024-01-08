@@ -242,7 +242,7 @@ function Header() {
 
                 <SecondBox>
                     <AnotherLink to= "/cart">
-                        <img src={cart} alt="" />
+                        <img src={cart} alt="" style = {{paddingTop: "2px"}} />
                         <NewTypo>
                             Cart
                         </NewTypo>
