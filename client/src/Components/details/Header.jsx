@@ -135,7 +135,7 @@ const Image = scStyled.img`
     background-color: #2874f0;
 
     @media screen and (max-width: 1100px){
-        padding-top: 5px;
+        
     }
 `
 
