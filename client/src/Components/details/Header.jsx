@@ -131,6 +131,14 @@ const NewButton = scStyled.button`
     }
 `
 
+const Image = scStyled.img`
+    background-color: #2874f0;
+
+    @media screen and (max-width: 1100px){
+        padding-top: 5px;
+    }
+`
+
 function Header() {
     const {account} = useContext(DataContext);
     const [dialogOpen, setDialogOpen] = useState(false);
@@ -241,7 +249,7 @@ function Header() {
 
                 <SecondBox>
                     <AnotherLink to= "/cart">
-                        <img src={cart} alt="" style = {{}} />
+                        <Image src={cart} alt="" style = {{}} />
                         <NewTypo>
                             Cart
                         </NewTypo>
