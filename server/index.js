@@ -5,23 +5,9 @@ import cors from "cors";
 
 const app = express();
 
-<<<<<<< HEAD
-app.use(cors({
-    origin: "https://clone-filpkart-mern-stack.vercal.app",
-    methods: ["POST", "PUT", "DELETE", "PATCH", "GET", "OPTIONS"],
-=======
-app.use((req, res, next)=>{
-    res.header("Access-Control-Allow-Origin", '*');
-    res.header("Access-Control-Allow-Methods", 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-    res.header("Access-Control-Allow-Headers", 'Content-Type, Authorization');
-    res.header("Access-Control-Allow-Credentials", 'true');
-    next();
-})
-
 app.use(cors({
     origin: "https://clone-flipkart-mern-stack.vercel.app",
-    methods: ["POST", "GET", "PUT", "DELETE"],
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
+    methods: ["POST", "GET", "PUT", "DELETE", "PATCH", "OPTIONS"],
     credentials: true
 }));
 

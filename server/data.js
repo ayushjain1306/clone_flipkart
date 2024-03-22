@@ -127,8 +127,4 @@ const products = [
     }
 ];
 
-<<<<<<< HEAD
 export default products;
-=======
-module.exports = products;
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad

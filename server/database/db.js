@@ -18,8 +18,4 @@ const connection = async ()=>{
     }
 }
 
-<<<<<<< HEAD
 export default connection;
-=======
-module.exports = connection;
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
