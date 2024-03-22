@@ -1,6 +1,8 @@
-const mongoose  = require('mongoose');
-const DefaultData = require('./defaultData.js')
-require('dotenv').config();
+import mongoose from "mongoose";
+import DefaultData from "./defaultData.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const connection = async ()=>{
     const URL = process.env.URL;
