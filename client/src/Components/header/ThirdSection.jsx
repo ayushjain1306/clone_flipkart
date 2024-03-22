@@ -189,25 +189,11 @@ function ThirdSection(){
     return (
         <NewDiv>
             <AnotherBox className = "seller">
-                <Image src={seller} alt="" />
-                <Heading3>Become a Seller</Heading3>
+                <SellerDiv className = "seller">
+                    <Image src={seller} alt="" />
+                    <Heading3>Become a Seller</Heading3>
+                </SellerDiv>
             </AnotherBox>
-            <SellerDiv className = "seller">
-                <img src={seller} alt="" style ={{
-                    height: "20px",
-                    width: "20px",
-                    marginTop: "2.5px"
-                }} />
-                <h3 style ={{
-                    color: "black",
-                    backgroundColor: "white",
-                    fontWeight: "500",
-                    marginLeft: "10px",
-                    fontSize: "16px",
-                    fontFamily: "Arial",
-                    marginTop: "3px"
-                }}>Become a Seller</h3>
-            </SellerDiv>
 
             {
                 account ?
@@ -225,22 +211,6 @@ function ThirdSection(){
                     <NewImage src={login} alt="Sign In" />
                     <AnotherHeading3>Login</AnotherHeading3>
                     <AnotherImage src={dropDown} alt="" />
-                    <img src={login} alt="Sign In" style={{
-                        height: "22px",
-                        width: "22px",
-                    }} />
-                    <h3 style ={{
-                        color: "black",
-                        backgroundColor: "white",
-                        fontWeight: "normal",
-                        marginLeft: "3%",
-                        fontSize: "16px",
-                    }}>Login</h3>
-                    <img src={dropDown} alt="" style={{
-                        height: "10px",
-                        width: "10px",
-                        marginLeft: "3%"
-                    }} />
                 </NewButton>
             }
 
