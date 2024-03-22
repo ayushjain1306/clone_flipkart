@@ -20,11 +20,8 @@ const NewBox = styled(Box)`
     @media screen and (max-width : 700px){
         display: grid;
         grid-template-columns: 24% 24% 24% 24%;
-<<<<<<< HEAD
         width: 100vw;
-=======
         width: 100%;
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
         margin: 0px;
         padding: 0px;
     }
@@ -60,11 +57,7 @@ function Navigation() {
             {
                 navData.map(data =>{
                     return (
-<<<<<<< HEAD
-                        <AnotherBox key={data.text} >
-=======
                         <AnotherBox key={data.text}>
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
                             <img src={data.url} alt="image" />
                             <Typography style ={{
                                 backgroundColor: "white",

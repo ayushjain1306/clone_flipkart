@@ -22,11 +22,7 @@ const NewTypo = styled(Typography)`
     }
 `
 
-<<<<<<< HEAD
 const NewImage = scStyled.img`
-=======
-const NewImage = scStyled.img `
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
     margin-top: 20px;
     width: 30%;
 

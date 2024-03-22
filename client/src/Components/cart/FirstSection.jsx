@@ -87,12 +87,7 @@ function FirstSection({ cartItems }) {
     const handleClick = (id) =>{
         dispatch(removeFromCart(id));
     }
-
-<<<<<<< HEAD
     const payment = () =>{
-=======
-    const payment = async() =>{
->>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
         alert("Payment Successful.");
     }
 
