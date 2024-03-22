@@ -73,7 +73,7 @@ function SecondSection() {
             {text && (
                 <NewList>
                     {filteredProducts.length === 0 ?
-                        <ListItem>No result found</ListItem>
+                        <ListItem style={{color: "black"}}>No result found</ListItem>
                         :
 
                         filteredProducts.map(product => {
