@@ -47,7 +47,7 @@ function SecondSection() {
         setText(e.target.value);
     }
 
-    const filteredProducts = products.filter(product => product.title.longTitle.toLowerCase().includes(text.toLowerCase()));
+    const filteredProducts = products && products.filter(product => product.title.longTitle.toLowerCase().includes(text.toLowerCase()));
 
     return (
         <NewBox>

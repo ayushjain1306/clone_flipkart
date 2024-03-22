@@ -25,12 +25,17 @@ function Home({products}) {
             </NewBox>
             <Banner />
             <Discount />
-            <AdSlider products= {products} title = "Deal of the Day" />
-            <Slider products= {products} title = "Best of Products" />
-            <Slider products= {products} title = "Best Sellers" />
-            <Slider products= {products} title = "Kitchen Appliances, Health & more" />
-            <Slider products= {products} title = "Home, Kitchen & more" />
-            <Slider products= {products} title = "Home and Electronics Items" />
+            {
+                products && 
+                <>
+                    <AdSlider products= {products} title = "Deal of the Day" />
+                    <Slider products= {products} title = "Best of Products" />
+                    <Slider products= {products} title = "Best Sellers" />
+                    <Slider products= {products} title = "Kitchen Appliances, Health & more" />
+                    <Slider products= {products} title = "Home, Kitchen & more" />
+                    <Slider products= {products} title = "Home and Electronics Items" />
+                </>
+            }
             <Description />
         </>
     )
