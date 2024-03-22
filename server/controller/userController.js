@@ -1,4 +1,4 @@
-const User = require('../model/userSchema.js')
+import User from "../model/userSchema.js";
 
 async function returnName(request, response){
     try {
@@ -83,7 +83,7 @@ async function userSignup(request, response) {
     }
 }
 
-module.exports = {
+export {
     userSignup,
     userLogin,
     returnName

@@ -1,9 +1,7 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
+import dotenv from "dotenv";
 
-const app = express();
-
-require('dotenv').config();
+dotenv.config();
 
 const USERNAME = process.env.EMAIL;
 const PASSWORD = process.env.PASSWORD;
@@ -74,7 +72,7 @@ async function sendOTP(request, response) {
     }
 }
 
-module.exports = {
+export {
     sendOTP,
     checkOTP
 };

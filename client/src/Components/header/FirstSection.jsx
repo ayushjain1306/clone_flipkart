@@ -12,6 +12,12 @@ const NewDiv = styled.div `
     }
 `
 
+const Image = styled.img`
+    margin-top: 5px;
+    margin-left: 40%;
+    background-color: white;
+`
+
 function FirstSection() {
     return (
         <NewDiv>
@@ -19,13 +25,8 @@ function FirstSection() {
                 backgroundColor: "white",
                 textDecoration: "none"
             }}>
-                <img className = "firstSectionImage" src={logo} alt="flipkart" style ={{
-                    marginTop: "5px",
-                    marginLeft: "40%",
-                    backgroundColor: "white",
-                }} />
+                <Image className = "firstSectionImage" src={logo} alt="flipkart" />
             </Link>
-            
         </NewDiv>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { styled } from "styled-components";
-
 import Header from './Components/header/Header';
 import Navigation from "./Components/body/Navigation";
 import Banner from "./Components/body/Banner";
@@ -9,7 +8,7 @@ import AdSlider from "./Components/body/AdSlider";
 import Discount from "./Components/body/Discount"
 import Description from "./Components/body/Description";
 
-const New = styled.div`
+const NewBox = styled.div`
     margin-top: 72px;
 
     @media screen and (max-width : 1100px){
@@ -21,9 +20,9 @@ function Home({products}) {
     return (
         <>
             <Header />
-            <New>
+            <NewBox>
                 <Navigation />
-            </New>
+            </NewBox>
             <Banner />
             <Discount />
             <AdSlider products= {products} title = "Deal of the Day" />

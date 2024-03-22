@@ -10,7 +10,7 @@ const NewDiv = styled.div`
     display: flex;
     padding-top: 30px;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 1100px){
         display: block;
     }
 `
@@ -18,7 +18,7 @@ const NewDiv = styled.div`
 const FirstHR = styled.hr`
     border: 0.1px solid grey;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 1100px){
         border: 0.1px rgb(34, 32, 32);
         margin-bottom: 40px;
     }

@@ -1,8 +1,8 @@
-import React from "react"
-import {Box, Typography, styled} from "@mui/material"
-import Carousel from "react-multi-carousel"
-import "react-multi-carousel/lib/styles.css"
-import { Link } from "react-router-dom"
+import React from "react";
+import {Box, Typography, styled} from "@mui/material";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 const responsive = {
     desktop: {

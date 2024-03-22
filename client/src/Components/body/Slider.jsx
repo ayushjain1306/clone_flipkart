@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, styled, Typography } from "@mui/material"
-import Carousel from "react-multi-carousel"
-import "react-multi-carousel/lib/styles.css"
-import { Link } from "react-router-dom"
+import { Box, styled, Typography } from "@mui/material";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 const responsive = {
     desktop: {
@@ -25,7 +25,7 @@ const NewBox = styled(Box)`
     padding-top: 20px;
 
     @media screen and (max-width: 700px){
-        margin: 0px 15px 0px 0px;
+        margin: 15px 0px 0px 0px;
         width: 100vw;
     }
 `

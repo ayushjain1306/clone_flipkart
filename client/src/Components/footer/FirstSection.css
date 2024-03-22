@@ -1,8 +1,8 @@
-li{
+li {
     list-style-type: none;
 }
 
-div div, ul{
+div div, ul {
     margin: "0px 10px";
 }
 
@@ -15,14 +15,13 @@ div div, ul{
     width: 25%;
 }
 
-.upper div{
+.upper div {
     color: grey;
     font-size: 13px;
     margin-bottom: 13px;
 }
 
-.upper ul{
+.upper ul {
     font-size: 13px;
     font-weight: bold;
-    
 }

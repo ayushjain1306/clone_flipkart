@@ -1,16 +1,17 @@
-const http = require('http');
-const connection  = require('./database/db.js');
-const Router = require('./router/route.js');
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+import connection from "./database/db.js";
+import Router from "./router/route.js";
+import express from "express";
+import cors from "cors";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://clone-filpkart-mern-stack.vercal.app",
+    methods: ["POST", "PUT", "DELETE", "PATCH", "GET", "OPTIONS"],
+    credentials: true
+}));
 
-app.use(bodyParser.json({extended: true}));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
 
 app.use('/', Router);
 

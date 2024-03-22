@@ -1,6 +1,6 @@
-import React from "react"
-import { Box, styled } from "@mui/material"
-import "./FirstSection.css"
+import React from "react";
+import { Box, styled } from "@mui/material";
+import "./FirstSection.css";
 
 const NewBox = styled(Box)`
     background-color: rgb(34, 32, 32);
@@ -9,8 +9,9 @@ const NewBox = styled(Box)`
     margin-left: 60px;
 
     @media screen and (max-width: 700px){
-        width: 100vw;
-        margin-left: 20px;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 `
 

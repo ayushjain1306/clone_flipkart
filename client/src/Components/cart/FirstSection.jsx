@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, styled } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { removeFromCart } from "../../redux/actions/cartActions.js";
-import paymentUsingRazorpay from "../../service/paymentApi.js";
 
 const MainBox = styled(Box)`
     background-color: white;
@@ -89,8 +88,8 @@ function FirstSection({ cartItems }) {
         dispatch(removeFromCart(id));
     }
 
-    const payment = async() =>{
-        paymentUsingRazorpay(totalAmount);
+    const payment = () =>{
+        alert("Payment Successful.");
     }
 
     return (

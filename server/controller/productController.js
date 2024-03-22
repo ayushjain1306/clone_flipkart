@@ -1,4 +1,4 @@
-const Product = require('../model/productSchema.js');
+import Product from '../model/productSchema.js'
 
 async function getProducts(request, response){
     try{
@@ -26,7 +26,7 @@ async function getProductById(request, response){
     }
 }
 
-module.exports = {
+export {
     getProducts,
     getProductById
 };

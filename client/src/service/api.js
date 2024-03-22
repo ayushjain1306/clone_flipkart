@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = "clone-flipkart-mern.vercel.app";
+const URL = "https://clone-flipkart-mern.vercel.app";
 
 export async function findLoginDetails(data){
     try{

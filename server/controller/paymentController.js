@@ -1,4 +1,4 @@
-const Razorpay = require("razorpay");
+import Razorpay from "razorpay";
 
 const instance = new Razorpay({
     key_id: process.env.RAZORPAY_API_KEY,
@@ -25,7 +25,7 @@ async function paymentVerification(request, response){
     res.status(200).json({success: true});
 }
 
-module.exports = {
+export {
     addPaymentGateway,
     paymentVerification
 };

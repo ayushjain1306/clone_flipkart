@@ -8,8 +8,14 @@ import dropDown from "./images/dropDown.jpg"
 import cart from "./images/cart.jpg"
 import options from "./images/options.jpg"
 import { DataContext } from "../../context/DataProvider.jsx"
-import { Typography } from "@mui/material"
+import { Typography, styled as scStyled } from "@mui/material"
 import LogOutBox from "./LogOutBox.jsx"
+
+const Typo = scStyled(Typography)`
+    color: black;
+    margin: 0px 10px;
+    background-color: white;
+`
 
 const NewDiv = styled.div `
     display: flex;
@@ -23,6 +29,128 @@ const NewDiv = styled.div `
         margin-left: 8%;
         margin-right: 2%;
     }
+`
+
+const AnotherBox = styled.div`
+    background-color: white;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1100px){
+        margin-left: 0px;
+    }
+`
+
+const Image = styled.img`
+    height: 20px;
+    width: 20px;
+    margin-top: 2.5px;
+`
+
+const Heading3 = styled.h3`
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 16px;
+    font-family: Arial;
+`
+
+const NewButton = styled.button`
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    baxkground-color: white;
+    margin-left: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 25%;
+
+    @media screen and (max-width: 500px){
+        margin-left: 0px;
+        margin-right: 5%;
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 1100px){
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+`
+
+const AnotherButton = styled.button`
+    background-color: white;
+    border: "0px";
+    margin-left: "5%";
+    margin-right: 4%;
+`
+
+const NewBox = styled.div`
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+`
+
+const AnotherDiv = styled.div`
+    color: white;
+    border-radius: 50%;
+    background-color: #2874f0;
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const NewImage = styled.img`
+    height: 22px;
+    width: 22px;
+`
+
+const AnotherImage = styled.img`
+    color: black;
+    background-color: white;
+    margin-left: 3%;
+    font-size: 16px;
+    font-weight: normal;
+`
+
+const AnotherHeading3 = styled.h3`
+    margin-left: 3%;
+    height: 10px;
+    width: 10px;
+`
+
+const Div = styled.div`
+    background-color: white;
+    display: flex;
+    align-items: center;
+`
+
+const NewLink = scStyled(Link)`
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: flex;
+`
+
+const AnotherImage2 = styled.img`
+    height: 30px;
+    width: 30px;
+`
+
+const AnotherHeading2 = styled.h3`
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-top: 3px;
+    font-weight: normal;
+    font-family: Arial;
+    margin-left: 5%;
 `
 
 function ThirdSection(){
@@ -44,144 +172,41 @@ function ThirdSection(){
 
     return (
         <NewDiv>
-            <div className = "seller" style = {{
-                backgroundColor: "white",
-                marginTop: "0px",
-                marginLeft: "5%",
-                marginRight: "0px",
-                marginBottom: "0px",
-                display: "flex",
-                alignItems: "center"
-            }}>
-                <img src={seller} alt="" style ={{
-                    height: "20px",
-                    width: "20px",
-                    marginTop: "2.5px"
-                }} />
-                <h3 style ={{
-                    color: "black",
-                    backgroundColor: "white",
-                    fontWeight: "500",
-                    marginLeft: "10px",
-                    fontSize: "16px",
-                    fontFamily: "Arial",
-                    marginTop: "3px"
-                }}>Become a Seller</h3>
-            </div>
+            <AnotherBox className = "seller">
+                <Image src={seller} alt="" />
+                <Heading3>Become a Seller</Heading3>
+            </AnotherBox>
 
             {
                 account ?
-
                 <>
-                    <button style={{
-                        backgroundColor: "white",
-                        border: "0px",
-                        marginLeft: "5%",
-                        marginRight: "4%"
-                    }} onClick= {()=> handleLogOpen()}>
-                        <div style ={{
-                            display: "flex",
-                            alignItems: "center",
-                            backgroundColor: "white",
-                            height: "100%"
-                        }}>
-                            <div style ={{
-                                color: "white",
-                                borderRadius: "50%",
-                                backgroundColor: "#2874f0",
-                                height: "30px",
-                                width: "30px",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                fontSize: "17px",
-                            }}>
-                                {array[0][0].toUpperCase()}
-                            </div>
-                            <Typography style ={{
-                                color: "black",
-                                margin: "0px 10px",
-                                backgroundColor: "white"
-                            }}>
-                                {array[0]}
-                            </Typography>
-                        </div>
-                    </button>
+                    <AnotherButton onClick= {()=> handleLogOpen()}>
+                        <NewBox>
+                            <AnotherDiv>{array[0][0].toUpperCase()}</AnotherDiv>
+                            <Typo>{array[0]}</Typo>
+                        </NewBox>
+                    </AnotherButton>
                     <LogOutBox logOpen = {logOpen} setLogOpen = {setLogOpen} />
                 </>
-
-                
-                
                 :
-                <button style={{
-                    border: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    backgroundColor: "white",
-                    marginLeft: "5%",
-                    borderRadius: "10px",
-                    cursor: "pointer",
-                    width: "25%"
-                }} onClick = {()=>handleOpen()}>
-                    <img src={login} alt="Sign In" style={{
-                        height: "22px",
-                        width: "22px",
-                    }} />
-                    <h3 style ={{
-                        color: "black",
-                        backgroundColor: "white",
-                        fontWeight: "normal",
-                        marginLeft: "3%",
-                        fontSize: "16px",
-                    }}>Login</h3>
-                    <img src={dropDown} alt="" style={{
-                        height: "10px",
-                        width: "10px",
-                        marginLeft: "3%"
-                    }} />
-                </button>
+                <NewButton onClick = {()=>handleOpen()}>
+                    <NewImage src={login} alt="Sign In" />
+                    <AnotherHeading3>Login</AnotherHeading3>
+                    <AnotherImage src={dropDown} alt="" />
+                </NewButton>
             }
 
 
-            <div style ={{
-                backgroundColor: "white",
-                marginLeft: "1%",
-                display: "flex",
-                alignItems: "center"
-            }}>
-                <Link to= "/cart" style ={{
-                    backgroundColor: "white",
-                    display:"flex",
-                    textDecoration: "none",
-                    color: "black"
-                }}>
-                    <img src={cart} alt="cart" style ={{
-                        height: "25px",
-                        width: "25px"
-                    }} />
-                    <h3 style={{
-                        backgroundColor: "white",
-                        color: "black",
-                        fontSize: "16px",
-                        marginTop: "3px",
-                        fontWeight: "normal",
-                        fontFamily: "Arial",
-                        marginLeft: "5%"
-                    }}>Cart</h3>
-                </Link>
-            </div>
+            <Div style ={{marginLeft: "1%"}}>
+                <NewLink to= "/cart">
+                    <NewImage src={cart} alt="cart" />
+                    <AnotherHeading2>Cart</AnotherHeading2>
+                </NewLink>
+            </Div>
 
-            <div style={{
-                backgroundColor: "white",
-                display: "flex",
-                alignItems: "center",
-                marginLeft: "9%",
-            }}>
-                <img src={options} alt="options" style ={{
-                    height: "30px",
-                    width: "30px"
-                }} />
-            </div>
+            <Div style ={{marginLeft: "9%"}}>
+                <AnotherImage2 src={options} alt="options" />
+            </Div>
 
             <DialogBox open = {open} setOpen = {setOpen} />
             

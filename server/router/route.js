@@ -1,10 +1,14 @@
-const express = require('express')
-const {userSignup, userLogin, returnName} = require('../controller/userController.js');
-const {sendOTP, checkOTP} = require('../controller/sendOTP.js');
-const {getProducts, getProductById} = require('../controller/productController.js');
-const {addPaymentGateway, paymentVerification} = require("../controller/paymentController.js");
+import express from "express"
+import {userSignup, userLogin, returnName} from '../controller/userController.js';
+import {sendOTP, checkOTP} from '../controller/sendOTP.js';
+import {getProducts, getProductById} from '../controller/productController.js';
+import {addPaymentGateway, paymentVerification} from "../controller/paymentController.js";
 
 const router = express.Router();
+
+router.get('/', (request, response) => {
+    response.json("Hello from server");
+})
 
 router.post('/signup', userSignup);
 router.post('/login', userLogin);
@@ -21,4 +25,4 @@ router.get('/getkey', (request, response) =>
     response.status(200).json({key: process.env.RAZORPAY_API_KEY})
 )
 
-module.exports = router;
+export default router;
