@@ -113,7 +113,7 @@ const NewImage = styled.img`
     width: 22px;
 `
 
-const AnotherImage = styled.img`
+const AnotherHeading3 = styled.img`
     color: black;
     background-color: white;
     margin-left: 3%;
@@ -121,7 +121,7 @@ const AnotherImage = styled.img`
     font-weight: normal;
 `
 
-const AnotherHeading3 = styled.h3`
+const AnotherImage = styled.h3`
     margin-left: 3%;
     height: 10px;
     width: 10px;
