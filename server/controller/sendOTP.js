@@ -51,7 +51,7 @@ async function sendOTP(request, response) {
             text: `Your OTP is ${otp}`
         };
 
-        await transporter.sendMail(mailOptions, (error, info)=>{
+        transporter.sendMail(mailOptions, (error, info)=>{
             if (error){
                 console.log(error);
                 response.json({
@@ -60,7 +60,6 @@ async function sendOTP(request, response) {
                 })
             }
             else {
-                // console.log("Email sent: " + info.response);
                 response.json({
                     message: otp
                 })
