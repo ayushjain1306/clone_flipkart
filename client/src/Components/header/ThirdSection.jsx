@@ -20,6 +20,7 @@ const Typo = scStyled(Typography)`
 const NewDiv = styled.div `
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     width: 40.5%;
 
@@ -31,6 +32,7 @@ const NewDiv = styled.div `
     }
 `
 
+<<<<<<< HEAD
 const AnotherBox = styled.div`
     background-color: white;
     margin-left: 5%;
@@ -59,11 +61,18 @@ const Heading3 = styled.h3`
 `
 
 const NewButton = styled.button`
+=======
+const NewButton = styled.button `
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
     border: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     baxkground-color: white;
+=======
+    background-color: white;
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
     margin-left: 5%;
     border-radius: 10px;
     cursor: pointer;
@@ -75,6 +84,7 @@ const NewButton = styled.button`
     }
 
     @media screen and (min-width: 500px) and (max-width: 1100px){
+<<<<<<< HEAD
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -151,6 +161,22 @@ const AnotherHeading2 = styled.h3`
     font-weight: normal;
     font-family: Arial;
     margin-left: 5%;
+=======
+       margin-left: 3%;
+       margin-right: 3%;
+    }
+`
+
+const SellerDiv = styled.div `
+    background-color: white;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1100px){
+        margin-left: 0px;
+    }
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
 `
 
 function ThirdSection(){
@@ -172,10 +198,29 @@ function ThirdSection(){
 
     return (
         <NewDiv>
+<<<<<<< HEAD
             <AnotherBox className = "seller">
                 <Image src={seller} alt="" />
                 <Heading3>Become a Seller</Heading3>
             </AnotherBox>
+=======
+            <SellerDiv className = "seller">
+                <img src={seller} alt="" style ={{
+                    height: "20px",
+                    width: "20px",
+                    marginTop: "2.5px"
+                }} />
+                <h3 style ={{
+                    color: "black",
+                    backgroundColor: "white",
+                    fontWeight: "500",
+                    marginLeft: "10px",
+                    fontSize: "16px",
+                    fontFamily: "Arial",
+                    marginTop: "3px"
+                }}>Become a Seller</h3>
+            </SellerDiv>
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
 
             {
                 account ?
@@ -190,9 +235,28 @@ function ThirdSection(){
                 </>
                 :
                 <NewButton onClick = {()=>handleOpen()}>
+<<<<<<< HEAD
                     <NewImage src={login} alt="Sign In" />
                     <AnotherHeading3>Login</AnotherHeading3>
                     <AnotherImage src={dropDown} alt="" />
+=======
+                    <img src={login} alt="Sign In" style={{
+                        height: "22px",
+                        width: "22px",
+                    }} />
+                    <h3 style ={{
+                        color: "black",
+                        backgroundColor: "white",
+                        fontWeight: "normal",
+                        marginLeft: "3%",
+                        fontSize: "16px",
+                    }}>Login</h3>
+                    <img src={dropDown} alt="" style={{
+                        height: "10px",
+                        width: "10px",
+                        marginLeft: "3%"
+                    }} />
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
                 </NewButton>
             }
 

@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import React from "react";
 import { Box, styled, Typography } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
+=======
+import React from "react"
+import { Box, styled, Typography } from "@mui/material"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import { Link } from "react-router-dom"
+>>>>>>> 826cd04902aa2460e9e372ecc1970e072d47ccad
 
 const responsive = {
     desktop: {
@@ -54,6 +62,7 @@ function Slider({products, title}) {
             <Carousel 
                 responsive={responsive}
                 swipeable={true}
+                infinite={true}
                 itemClass="carousel-item-padding-40-px"
 
                 style ={{

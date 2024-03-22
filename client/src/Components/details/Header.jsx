@@ -87,7 +87,6 @@ const AnotherLink = styled(Link)`
 
     @media screen and (max-width: 1100px){
         display: inline;
-        vertical-align: middle;
     }
 `
 
@@ -129,6 +128,14 @@ const NewButton = scStyled.button`
     @media screen and (max-width: 1100px){
         width: 20%;
         margin-bottom: 5px;
+    }
+`
+
+const Image = scStyled.img`
+    background-color: #2874f0;
+
+    @media screen and (max-width: 1100px){
+        
     }
 `
 
@@ -242,7 +249,7 @@ function Header() {
 
                 <SecondBox>
                     <AnotherLink to= "/cart">
-                        <img src={cart} alt="" />
+                        <Image src={cart} alt="" style = {{}} />
                         <NewTypo>
                             Cart
                         </NewTypo>
